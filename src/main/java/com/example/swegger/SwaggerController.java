@@ -16,12 +16,12 @@ public class SwaggerController
         return List.of("Ram", "Shyam", "Sita");
     }
 
-    @PutMapping("/{index}")
-    public String updatePatient(@PathVariable int index, @RequestBody String newName) {
-        if (index < 0 || index >= patients.size()) {
-            return "Invalid patient index: " + index;
-        }
-        patients.set(index, newName);
-        return "Patient updated successfully to: " + newName;
-    }
+//    @PutMapping("/{index}")
+//    public String updatePatient(@PathVariable int index, @RequestBody String newName) {
+//        if (index < 0 || index >= patients.size()) {
+//            return "Invalid patient index: " + index;
+//        }
+//        patients.set(index, newName);
+//        return "Patient updated successfully to: " + newName;
+//    }
 }
